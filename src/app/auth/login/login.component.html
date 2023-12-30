@@ -1,0 +1,56 @@
+<!-- Page Content -->
+<div class="Login">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12  text-center">
+                <div class="container box">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 m-auto">
+
+                            <form [formGroup]="LoginForm" class="row justify-content-center form-signin"
+                                (ngSubmit)="onClickSubmit(LoginForm.value)">
+                                <div class="col-12 col-md-12">
+                                    <h2 class="form-signin-heading">Sign In</h2>
+                                    <label for="inputEmail" class="sr-only">Email address</label>
+                                    <mat-form-field color="accent" appearance="outline">
+
+                                        <input matInput placeholder="Email address" required formControlName='email'
+                                            type="email" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$">
+                                        <mat-hint
+                                            *ngIf="LoginForm.get('email')?.hasError('email') && !LoginForm.get('email')?.hasError('required')">
+                                            Please enter a valid email
+                                        </mat-hint>
+                                    </mat-form-field>
+                                </div>
+
+                                <div class="col-12 col-md-12">
+                                    <label for="inputPassword" class="sr-only">Password</label>
+                                    <mat-form-field color="accent" appearance="outline">
+
+                                        <input matInput placeholder="Password" required formControlName='password'
+                                            type="password">
+                                    </mat-form-field>
+
+                                </div>
+                                <div class=" col-12 col-md-7 text-right">
+                                    <!-- <a href=""> Forget PassWord ?</a> -->
+                                </div>
+                                <div class=" col-12 col-md-7 text-center">
+                                    <button class="btn btn-lg btn-primary btn-block" mat-raised-button color="primary"
+                                        click='onSubmit'>Sign In</button>
+                                </div>
+
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-message class="message" [isOpen]="isModalOpen" (closeModalEvent)="closeModal()">
+    <!-- Modal Content Goes Here -->
+    <h2>Error</h2>
+    <p>Please Enter Valid Data</p>
+</app-message>

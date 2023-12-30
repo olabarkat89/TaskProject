@@ -1,0 +1,27 @@
+.show{
+    display: flex;
+    width: 25%;
+    justify-content: center;
+    /* align-items: center; */
+    margin: auto;
+    position: absolute;
+    left: 40%;
+    top: 10%;
+    height: auto;
+    .modal-content{
+        padding: 1rem;
+        .close{
+            text-align: center;
+            align-items: center;
+            margin: auto;
+            border: none;
+            background: transparent;
+            font-size: 21px;
+            border: 1px solid red;
+            color: red;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+        }
+    }
+}

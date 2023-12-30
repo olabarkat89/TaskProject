@@ -1,0 +1,41 @@
+.Home{
+    padding: 2rem;
+}
+table {
+    width: 100%;
+    margin: 0 auto;
+    border: 0.5px solid #BDBDBD;
+  }
+  td.mat-cell{
+    border-bottom: 0.5px solid #BDBDBD !important;
+  }
+  :host ::ng-deep .mat-paginator {
+    display: block;
+       margin-inline-start: 2rem;
+    margin-inline-end: 4rem;
+}
+  :host ::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex{
+    border: 0.5px solid #BDBDBD;
+    background-color: #fff !important;
+    border-radius: 0 !important;
+    width: 100% !important;
+
+  }
+  :host ::ng-deep .mat-form-field-appearance-standard .mat-form-field-flex{
+      background-color: #fff;
+      width:32%;
+      border: 0.5px solid #BDBDBD;
+      display: flex;
+      align-self: center;
+  }
+  :host ::ng-deep .mat-form-field-appearance-standard .mat-form-field-flex{
+    padding-inline-start: 1rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0;
+  }
+  mat-form-field {
+    width: 100%;
+  }
+  :host ::ng-deep .mat-form-field-wrapper{
+    padding-bottom: 0.8rem !important;
+  }

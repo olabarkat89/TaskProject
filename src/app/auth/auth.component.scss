@@ -1,0 +1,35 @@
+.imgPart{
+    background-image: url(/assets/images/login-bg.jpg);  
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+z-index: 1000;
+
+    .overlay{
+        position: absolute;
+        top: 15%;
+        left: 32%;
+        .welcome-text{
+            color: #140B4D;
+            font-size: 50px;
+            font-weight: 500;
+            margin-left: 95px;
+            margin-bottom: 50px;
+        }
+        .copy-rights{
+            color: white;
+            margin-left: 25px;
+            margin-top: 10rem;
+            font-size: 16px;        }
+    }
+}
+.imgPart::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+     background-color: rgba(255, 255, 255, 0.30)!important;
+    z-index: -1;
+  }

@@ -1,0 +1,85 @@
+.Login {
+    form {
+        box-shadow: 3px 7px 17px 3px gray;
+        border-radius: 10px;
+        background: white;
+        padding: 1rem;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        height: 50%;
+
+        label {
+            width: 100%;
+            text-align: left;
+        }
+
+        button {
+            padding: 0.2rem 2rem;
+        }
+    }
+}
+
+mat-hint {
+    color: red;
+}
+
+.message {
+
+    h2,
+    p {
+        color: red;
+        text-align: center;
+    }
+
+}
+
+
+
+.SingInButton {
+    background-color: #140B4D;
+    width: 50%;
+    border-radius: 20px;
+    font-size: large;
+    color: var(--nine-color);
+    margin: 10px;
+    position: relative;
+
+}
+
+.SingInButton mat-spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    background-color: #ffff;
+    background-clip: border-box;
+    border: 1px solid #ffff;
+}
+
+/* form feild  */
+:host ::ng-deep .mat-form-field {
+    max-width: 100%;
+    width: 100% !important;
+}
+
+
+:host ::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {
+    border-radius: 20px;
+    padding: 0.75em 0.75em 3px 0.75em;
+}
+
+:host ::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {
+    background-color: #E8F0FE;
+}
+
+
+::placeholder {
+    color: black;
+}
